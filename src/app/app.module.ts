@@ -9,6 +9,7 @@ import {environment} from '../environments/environment';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireModule} from 'angularfire2';
 import {SharedModule} from './shared/shared.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {SharedModule} from './shared/shared.module';
     AppRoutingModule,
     SharedModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
