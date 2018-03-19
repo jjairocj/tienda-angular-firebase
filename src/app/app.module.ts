@@ -10,11 +10,13 @@ import {AngularFirestoreModule} from 'angularfire2/firestore';
 import {AngularFireModule} from 'angularfire2';
 import {SharedModule} from './shared/shared.module';
 import { AuthModule } from './auth/auth.module';
+import { NavigationComponent } from './common/navigation/navigation.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
